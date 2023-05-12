@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    
+    
+ <div class="logo">
+    <img src="s.jpg" alt="">
+    
+</head>
+<body>
+<header class="header">
+<h2>karabuk university</h2>
+        <nav class="navbar">
+        <a href="http://localhost/nouman-minhas/phpecom/admin/index.php">dashboad</a>
+         <a href="https://www.karabuk.edu.tr/en/about-karabuk/">about</a>
+         <a href="http://localhost/nouman-minhas/phpecom/admin/login.php">sign-in</a>
+        
+</nav>
+</header>
+
+
+
+
+<style>
+.header{
+    background: darkblue;
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 7%;
+    border-bottom: black;
+    top:0; left: 0; right: 0;
+    z-index:1000; 
+ 
+}
+.logo img{
+    height:6.5rem;
+    border-radius: 5%;
+    justify-content: flex-start;
+    width: 6.5rem;
+}    
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration-color: burlywood;
+    text-decoration-line: none;
+    justify-content: flex-end;
+    padding-bottom: 2%;
+   
+}    
+    
+.header .navbar a:hover{
+  
+    border-bottom: .1.6rem solid ;
+    padding-bottom: .5rem;
+    color: darkred;
+}  
+.header h2{
+    font-size: 1.3rem;
+    color: #fff;
+    justify-content: flex-start;
+    margin-left:-7% ;
+    font-size: 1.6rem;
+    padding-top:-3rem;
+      
+       
+}
+
+</style>
+</body>
+ 
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Registration Form</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Student Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+   
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+ 
+  </body>
+</html>
